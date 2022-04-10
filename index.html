@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convertor</title>
+</head>
+
+<body>
+    <form action="" id="form">
+        <label for="source">Enter source base :</label>
+        <select name="source" id="source"
+            onclick="document.getElementById('insert1').innerText=document.getElementById('source').value" required>
+            <option value="">Select</option>
+            <option value="decimal">Decimal</option>
+            <option value="binary">Binary</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select><br>
+        <label for="dest">Enter destination base :</label>
+        <select name="dest" id="dest"
+            onclick="document.getElementById('insert2').innerText=document.getElementById('dest').value" required>
+            <option value="">Select</option>
+            <option value="decimal">Decimal</option>
+            <option value="binary">Binary</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select><br>
+        <label for="input">Enter a <span id="insert1"></span> number :</label> <input type="text" name="input"
+            id="input" placeholder="input" required><br>
+        <input type="button" value="Submit" onclick="main()">
+        <input type="reset" value="Reset" onclick="document.getElementById('form').reset()"><br>
+        <label for="output"><span id="insert2"></span> equivalent is :</label> <input type="text" name="output" id="output"
+            placeholder="output" disabled><br>
+    </form>
+    <script src="converter.js"></script>
+</body>
+
+</html>
