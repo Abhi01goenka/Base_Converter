@@ -89,13 +89,13 @@ function octal_to_decimal(n) {
     return dec
 }
 function binary_to_octal(n) {
-    let a=binary_to_decimal(n)
-    let b=decimal_to_octal(a)
+    let a = binary_to_decimal(n)
+    let b = decimal_to_octal(a)
     return b
 }
 function octal_to_binary(n) {
-    let a=octal_to_decimal(n)
-    let b=decimal_to_binary(a)
+    let a = octal_to_decimal(n)
+    let b = decimal_to_binary(a)
     return b
 }
 function hexadecimal_to_decimal(s) {
@@ -125,36 +125,35 @@ function hexadecimal_to_decimal(s) {
     return dec
 }
 function decimal_to_hexadecimal(n) {
-    let h = "0123456789ABCDEF"
-    let hex = ""
+    let h = "0123456789ABCDEF", hex = ""
     while (n > 0) {
         let rem = Math.trunc(n % 16)
         hex += h[rem]
         n = Math.trunc(n / 16)
     }
     let rev = ""
-    for (let i = hex.length; i >= 0; i--) {
+    for (let i = hex.length-1; i >= 0; i--) {
         rev += hex[i]
     }
     return rev
 }
 function hexadecimal_to_binary(s) {
-    let a=hexadecimal_to_decimal(s)
-    let b=decimal_to_binary(a)
+    let a = hexadecimal_to_decimal(s)
+    let b = decimal_to_binary(a)
     return b
 }
 function binary_to_hexadecimal(n) {
-    let a=binary_to_decimal(n)
-    let b=decimal_to_hexadecimal(a)
+    let a = binary_to_decimal(n)
+    let b = decimal_to_hexadecimal(a)
     return b
 }
 function hexadecimal_to_octal(s) {
-    let a=hexadecimal_to_decimal(s)
-    let b=decimal_to_octal(a)
+    let a = hexadecimal_to_decimal(s)
+    let b = decimal_to_octal(a)
     return b
 }
 function octal_to_hexadecimal(n) {
-    let a=octal_to_decimal(n)
-    let b=decimal_to_hexadecimal(a)
+    let a = octal_to_decimal(n)
+    let b = decimal_to_hexadecimal(a)
     return b
 }
