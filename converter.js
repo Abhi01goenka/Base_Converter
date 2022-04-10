@@ -89,10 +89,14 @@ function octal_to_decimal(n) {
     return dec
 }
 function binary_to_octal(n) {
-    return decimal_to_octal(binary_to_decimal(n))
+    let a=binary_to_decimal(n)
+    let b=decimal_to_octal(a)
+    return b
 }
 function octal_to_binary(n) {
-    return decimal_to_binary(octal_to_decimal(n))
+    let a=octal_to_decimal(n)
+    let b=decimal_to_binary(a)
+    return b
 }
 function hexadecimal_to_decimal(s) {
     let rev = ""
@@ -135,14 +139,22 @@ function decimal_to_hexadecimal(n) {
     return rev
 }
 function hexadecimal_to_binary(s) {
-    return decimal_to_binary(hexadecimal_to_decimal(s))
+    let a=hexadecimal_to_decimal(s)
+    let b=decimal_to_binary(a)
+    return b
 }
 function binary_to_hexadecimal(n) {
-    return decimal_to_hexadecimal(binary_to_decimal(n))
+    let a=binary_to_decimal(n)
+    let b=decimal_to_hexadecimal(a)
+    return b
 }
 function hexadecimal_to_octal(s) {
-    return decimal_to_octal(hexadecimal_to_decimal(s))
+    let a=hexadecimal_to_decimal(s)
+    let b=decimal_to_octal(a)
+    return b
 }
 function octal_to_hexadecimal(n) {
-    return decimal_to_hexadecimal(octal_to_decimal(n))
+    let a=octal_to_decimal(n)
+    let b=decimal_to_hexadecimal(a)
+    return b
 }
