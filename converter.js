@@ -5,8 +5,8 @@ function main() {
         alert("Source and destination base cannot be same!");
     }
     else {
+        var n = document.getElementById("input").value
         if (source === "binary" || source === "decimal" || source === "octal") {
-            var n = document.getElementById("input").value
             console.log(n)
             if (isNaN(n) === true) {
                 alert("Invalid input!");
