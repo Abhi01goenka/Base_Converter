@@ -1,42 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,600&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
+    <link rel="stylesheet" href="style.css" />
     <title>Convertor</title>
-</head>
+  </head>
 
-<body>
-    <form action="" id="form">
+  <body>
+    <h1 class="hi">Base Converter</h1>
+    <div class="x">
+      <form action="" id="form">
         <label for="source">Enter source base :</label>
-        <select name="source" id="source"
-            onclick="document.getElementById('insert1').innerText=document.getElementById('source').value" required>
-            <option value="">Select</option>
-            <option value="decimal">Decimal</option>
-            <option value="binary">Binary</option>
-            <option value="octal">Octal</option>
-            <option value="hexadecimal">Hexadecimal</option>
-        </select><br>
+        <select
+          name="source"
+          id="source"
+          onclick="document.getElementById('insert1').innerText=document.getElementById('source').value"
+          required
+        >
+          <option value="">Select</option>
+          <option value="decimal">Decimal</option>
+          <option value="binary">Binary</option>
+          <option value="octal">Octal</option>
+          <option value="hexadecimal">Hexadecimal</option></select
+        ><br /><br />
         <label for="dest">Enter destination base :</label>
-        <select name="dest" id="dest"
-            onclick="document.getElementById('insert2').innerText=document.getElementById('dest').value" required>
-            <option value="">Select</option>
-            <option value="decimal">Decimal</option>
-            <option value="binary">Binary</option>
-            <option value="octal">Octal</option>
-            <option value="hexadecimal">Hexadecimal</option>
-        </select><br>
-        <label for="input">Enter a <span id="insert1"></span> number :</label> <input type="text" name="input"
-            id="input" placeholder="input" required><br>
-        <input type="button" value="Submit" onclick="main()">
-        <input type="reset" value="Reset" onclick="document.getElementById('form').reset()"><br>
-        <label for="output"><span id="insert2"></span> equivalent is :</label> <input type="text" name="output" id="output"
-            placeholder="output" disabled><br>
-    </form>
-    <script src="converter.js"></script>
-</body>
-
+        <select
+          name="dest"
+          id="dest"
+          onclick="document.getElementById('insert2').innerText=document.getElementById('dest').value"
+          required
+        >
+          <option value="">Select</option>
+          <option value="decimal">Decimal</option>
+          <option value="binary">Binary</option>
+          <option value="octal">Octal</option>
+          <option value="hexadecimal">Hexadecimal</option></select
+        ><br /><br />
+        <label for="input">Enter a <span id="insert1"></span> number :</label>
+        <input
+          type="text"
+          name="input"
+          id="input"
+          placeholder="input"
+          required
+        /><br />
+        <br />
+        <input type="button" value="Submit" onclick="main()" />
+        <input
+          type="reset"
+          value="Reset"
+          onclick="document.getElementById('form').reset()"
+        /><br /><br />
+        <label for="output"><span id="insert2"></span> equivalent is :</label>
+        <input
+          type="text"
+          name="output"
+          id="output"
+          placeholder="output"
+          disabled
+        /><br />
+      </form>
+      <script src="converter.js"></script>
+    </div>
+  </body>
 </html>

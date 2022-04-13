@@ -1,3 +1,39 @@
-*{
-    background-color: greenyellow;
+body {
+  background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
+  background: linear-gradient(to right, #1cb5e0, #000046);
+
+  font-size: 23px;
+  font-weight: 400;
+}
+.x {
+  border-radius: 20px;
+  background: #000046;
+  background: -webkit-linear-gradient(to right, #1cb5e0d2, #6d6dcb);
+  background: linear-gradient(to left, #1cb5e0cb, #1b59df86);
+
+  height: 350px;
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  display: flex;
+  margin-top: 50px;
+  margin-left: 470px;
+  padding: 40px;
+  box-sizing: border-box;
+  width: 600px;
+  transition: all 0.3s linear;
+}
+.hi {
+  font-family: "Cabin", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color: rgba(42, 247, 254, 0.885);
+  transition: all 0.7s linear;
+}
+h1:hover {
+  font-size: 80px;
+  color: rgb(46, 210, 120);
+}
+.x:hover {
+  color: white;
 }
