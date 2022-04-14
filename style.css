@@ -20,7 +20,7 @@ body {
   padding: 40px;
   box-sizing: border-box;
   width: 600px;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
 }
 .hi {
   font-family: "Cabin", sans-serif;
@@ -32,8 +32,9 @@ body {
 }
 h1:hover {
   font-size: 80px;
-  color: rgb(46, 210, 120);
+  color: rgb(6, 184, 255);
 }
 .x:hover {
-  color: white;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
 }
