@@ -5,13 +5,19 @@ body {
   font-size: 23px;
   /* font-weight: 400; */
 }
+input {
+  font-size: 18px;
+}
+select {
+  font-size: 18px;
+}
 .x {
   border-radius: 20px;
   background: #000046;
   background: -webkit-linear-gradient(to right, #1cb5e0d2, #6d6dcb);
   background: linear-gradient(to left, #1cb5e0cb, #1b59df86);
 
-  height: 350px;
+  height: 390px;
   border: 3px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   display: flex;
