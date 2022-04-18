@@ -11,6 +11,9 @@ input {
 select {
   font-size: 18px;
 }
+label {
+  font-weight: 600;
+}
 .x {
   border-radius: 20px;
   background: #000046;
@@ -26,7 +29,7 @@ select {
   margin-left: 470px;
   padding: 40px;
   font-weight: 540;
-  padding-left: 120px;
+  padding-left: 90px;
 
   box-sizing: border-box;
   width: 600px;
