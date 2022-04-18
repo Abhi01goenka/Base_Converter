@@ -20,13 +20,13 @@ label {
   background: -webkit-linear-gradient(to right, #1cb5e0d2, #6d6dcb);
   background: linear-gradient(to left, #1cb5e0cb, #1b59df86);
 
-  height: 390px;
-  border: 3px solid rgb(0, 0, 0);
+  height: 400px;
+  border: 2px solid rgba(0, 140, 255, 0.922);
   color: rgb(0, 0, 0);
   display: flex;
   font-size: 24px;
   margin-top: 50px;
-  margin-left: 470px;
+  margin-left: 457px;
   padding: 40px;
   font-weight: 540;
   padding-left: 90px;
@@ -49,5 +49,8 @@ h1:hover {
 }
 .x:hover {
   color: rgb(0, 0, 0);
+  border: 3px solid rgba(0, 162, 255, 0.922);
+  /* border-right: 3px solid rgba(0, 76, 255, 0.922);
+  border-bottom: 3px solid rgba(0, 76, 255, 0.922); */
   font-size: 26px;
 }
