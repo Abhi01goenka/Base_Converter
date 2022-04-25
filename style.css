@@ -41,7 +41,8 @@ label {
   font-size: 70px;
   text-align: center;
   color: rgba(42, 247, 254, 0.885);
-  transition: all 0.7s linear;
+  transition: all 0.7s;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
 }
 h1:hover {
   font-size: 80px;
