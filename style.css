@@ -1,3 +1,57 @@
-*{
-    background-color: greenyellow;
+body {
+  background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
+  background: linear-gradient(to right, #1cb5e0, #000046);
+
+  font-size: 23px;
+  /* font-weight: 400; */
+}
+input {
+  font-size: 18px;
+}
+select {
+  font-size: 18px;
+}
+label {
+  font-weight: 600;
+}
+.x {
+  border-radius: 20px;
+  background: #000046;
+  background: -webkit-linear-gradient(to right, #1cb5e0d2, #6d6dcb);
+  background: linear-gradient(to left, #1cb5e0cb, #1b59df86);
+
+  height: 400px;
+  border: 2px solid rgba(0, 140, 255, 0.922);
+  color: rgb(0, 0, 0);
+  display: flex;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-left: 457px;
+  padding: 40px;
+  font-weight: 540;
+  padding-left: 90px;
+
+  box-sizing: border-box;
+  width: 600px;
+  transition: all 0.1s linear;
+}
+.hi {
+  font-family: "Cabin", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 70px;
+  text-align: center;
+  color: rgba(42, 247, 254, 0.885);
+  transition: all 0.7s;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+}
+h1:hover {
+  font-size: 80px;
+  color: rgb(6, 184, 255);
+}
+.x:hover {
+  color: rgb(0, 0, 0);
+  border: 3px solid rgba(0, 162, 255, 0.922);
+  /* border-right: 3px solid rgba(0, 76, 255, 0.922);
+  border-bottom: 3px solid rgba(0, 76, 255, 0.922); */
+  font-size: 26px;
 }
